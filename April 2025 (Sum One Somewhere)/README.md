@@ -1,15 +1,23 @@
 # April Puzzle: Sum One Somewhere
 The puzzle: This month asked to find a probability (p) where there is exactly a 1/2 probability (chance) that there an infifnite path down a tree whose sum is at most one. Where p is the probability of independently labeling the nodes of an infinite complete binary tree 0 with probability p and 1 otherwise (1 - p).
 
+$\newline$
 ## The Approach:
-Let $X$ be the label assigned to each individual node of the tree, where:
-$$X = \begin{cases} 0  && p \\ 1 && 1 - p \end{cases}$$
+Let there be some binary tree ($T$), such that $T$ is infitely rooted and complete. Each node ($v \in T$) is independnetly assigned some label $X$, where:
 
-We can denote that the labels for any node on tree as: 
-$$X_i \quad \forall i \in \mathbb{Z}^+$$
+$$X_v = \begin{cases}
+    0 &\text{with probability } p\\\
+    1 &\text{with probability } 1- p
+  \end{cases}$$
 
-We can choose any arbituary path by traversing down the tree using the for any 'n' number of nodes through the formula $2^d + k$, where $k \in {0, 1}$, $d \in [0, n](\mathbb{Z})$ 
+  For each Path ($P$), we sum along its path, whose value ($Y$) can be denoted as:
 
-traversing down this arbituary path, we can denote its sum (Y) for the two cases, the left and right side:
-$$Y = \sum_{i \in {2^0, 2^1, 2^2, 2^3, \dots, 2^n}}{X_i}$$
-$$Y = \sum_{i \in {1, (2^1 - 1), (2^2 - 1), (2^3 - 1), \dots, (2^n - 1)}}{X_i}$$
+  $$Y = \sum_{i = 0}^{\infty}{X_{v_{i}}}$$
+  
+  We can now define some event ($A$), where:
+  ```math
+   A = \left\{ \exists P : Y \leq 1 \right\}
+  ```
+Which is the event where there exists at least one infinite path whose summed path is less than or equal to one
+
+Now that we have properly defined the event, 
