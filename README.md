@@ -3,4 +3,4 @@ Here I have all of the solutions to the JaneStreet puzzles I have solved, starti
 
 $\newline$
 ## April 2025: Sum One Somewhere (Difficulty Level: Medium)
--- 
+This month's puzzle took basic concepts of probability theory and and calculus to locate a tangible searchable range, we can use to approximate the probability to 10 decimal places. Overall, it was an interesting problem, that took a good amount of thought to solve. 
