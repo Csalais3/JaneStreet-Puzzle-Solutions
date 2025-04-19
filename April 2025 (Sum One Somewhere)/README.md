@@ -20,4 +20,10 @@ $$X_v = \begin{cases}
   ```
 Which is the event where there exists at least one infinite path whose summed path is less than or equal to one
 
-Now that we have properly defined the event, 
+Now that we have properly defined the event, we know that this probability must equal $\frac{1}{2}$, therefore we solve for the p that makes 
+
+$$\mathbb{P}(A) = \frac{1}{2}$$
+
+$\newline$
+## The Solution:
+Coming Soon, when the puzzle concludes
